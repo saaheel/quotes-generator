@@ -59,7 +59,7 @@ async function getQuotes() {
 
 // Tweet Quote
 function tweetQuote() {
-  const twiiterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
+  const twiiterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent} ${encodeURIComponent('\n#wowquotes #motivationalquotes #dailymotivation')}`;
   window.open(twiiterUrl, "_blank");
 }
 
